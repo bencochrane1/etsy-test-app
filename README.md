@@ -13,13 +13,13 @@
 - Create a Stamplay account on stamplay.com
 
 - Create the following tables:
-## Category
+#### Category
 with fields: name (string)
 
-## Pictures
+#### Pictures
 with fields: photo (file)
 
-## Products
+#### Products
 with fields: 
 category (points to category table item)
 color (string)
@@ -29,7 +29,7 @@ pictures (points to pictures table item)
 price (float)
 size (array of strings)
 
-## Orders
+#### Orders
 with fields:
 color (string)
 price (float)
@@ -37,7 +37,7 @@ product (points to product table item)
 size (string)
 
 
-- Configure Stamplay Project : Run `stamplay login` and user your Stamplay login details
+### Configure Stamplay Project : Run `stamplay login` and user your Stamplay login details
 
 
 ### Running locally for development
