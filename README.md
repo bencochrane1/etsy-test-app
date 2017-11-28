@@ -37,7 +37,9 @@ product (points to product table item)
 size (string)
 
 
-### Configure Stamplay Project : Run `stamplay login` and user your Stamplay login details
+### Configure Stamplay Project : 
+
+- Run `stamplay login` and user your Stamplay login details
 
 
 ### Running locally for development
