@@ -1,0 +1,10 @@
+{
+  "appId": "etsyairtasker",
+  "apiKey": "add82d30486f051a6828f19d191b4439828b4c60e255e5525cca727941864a64",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

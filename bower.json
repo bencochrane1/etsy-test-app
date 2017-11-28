@@ -1,0 +1,28 @@
+{
+  "name": "angular-etsy-stamplay",
+  "version": "0.0.0",
+  "homepage": "https://github.com/scotch-io/angular-etsy-stamplay",
+  "authors": [
+    "Chris Sevilleja <chris@scotch.io>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "algoliasearch": "~3.8.1",
+    "angular": "~1.4.5",
+    "angular-stamplay": "0.0.2",
+    "angular-ui-router": "~0.2.15",
+    "bootswatch": "3.3.5+3",
+    "ng-file-upload": "~7.2.1",
+    "stamplay-js-sdk": "~2.0.5",
+    "angular-bootstrap": "~0.13.4",
+    "ng-lodash": "^0.5.0",
+    "angular-stripe-checkout": "^5.1.0"
+  }
+}
