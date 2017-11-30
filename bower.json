@@ -18,6 +18,7 @@
     "ng-file-upload": "~7.2.1",
     "stamplay-js-sdk": "~2.0.5",
     "angular-bootstrap": "~0.13.4",
-    "angular-stripe-checkout": "^5.1.0"
+    "angular-stripe-checkout": "^5.1.0",
+    "ng-lodash": "^0.5.0"
   }
 }

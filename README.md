@@ -22,7 +22,7 @@ with fields: photo (file)
 #### Products
 with fields: 
 category (points to category table item)
-color (string)
+color (array of strings)
 description (string)
 name (string)
 pictures (points to pictures table item)

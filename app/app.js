@@ -15,7 +15,8 @@ angular
 		'OrderService',
 		'ngFileUpload',
 		'algoliasearch',
-		'ui.bootstrap'
+		'ui.bootstrap',
+		'ngLodash'
 	])
 	.controller('MainController', ['User', '$rootScope', 'algolia', '$q', '$state', 'lodash', MainController]);
 
