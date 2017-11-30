@@ -5,19 +5,10 @@ angular
 function HomeController(Product, lodash) {
 	var home = this;
 
-	home.addBulkProducts = addBulkProducts;
+	// home.addBulkProducts = addBulkProducts;
 
 
-	function addBulkProducts() {
 
-		var result = confirm("Are you sure you want to add " + allProducts.length + " products?");
-		if (result) {
-			lodash.map(allProducts, function(product) {
-				createProduct(product);
-			});
-		}		
-		
-	}
 
 
 

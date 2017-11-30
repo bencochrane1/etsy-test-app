@@ -2,7 +2,6 @@ angular
 	.module('etsyApp', [
 		'ngStamplay',
 		'ui.router',
-		'ngLodash',
 		'app.routes',
 		'app.admin',
 		'app.authenticate',

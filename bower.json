@@ -1,10 +1,6 @@
 {
   "name": "angular-etsy-stamplay",
   "version": "0.0.0",
-  "homepage": "https://github.com/scotch-io/angular-etsy-stamplay",
-  "authors": [
-    "Chris Sevilleja <chris@scotch.io>"
-  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -22,7 +18,6 @@
     "ng-file-upload": "~7.2.1",
     "stamplay-js-sdk": "~2.0.5",
     "angular-bootstrap": "~0.13.4",
-    "ng-lodash": "^0.5.0",
     "angular-stripe-checkout": "^5.1.0"
   }
 }
