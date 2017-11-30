@@ -16,6 +16,7 @@ function ProductService($stamplay, $q, $http) {
 		getCategories: getCategories
 	};
 
+
 	/** 
 	 * Get all the products
 	 */
@@ -57,8 +58,8 @@ function ProductService($stamplay, $q, $http) {
 		var def = $q.defer();
 
 		// instantiate a new product model from the stamplay js sdk
-		data.category = [data.category];
-		console.log('data', data);
+		if (!!data.category) data.category = [data.category];
+		console.log('data in: ', data);
 
 		// save the object
 		Stamplay.Object('products').save(data)

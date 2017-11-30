@@ -31,7 +31,7 @@ function MainController(User, $rootScope, algolia, $q, $state, lodash) {
 
 	// configure algolia
   // grab our credentials from algolia
-  var client = algolia.Client('4KRGXPTF7K', '4594f3b07157188f25b3f5a8a7eba04e');
+  var client = algolia.Client('PQNOLP3HDW', '695b68c5bdf1112820b7fa00dd3d41a2');
   var index = client.initIndex('products');
 
 	$rootScope.currentUser = {}; // creating this object to hold our current users info
@@ -57,9 +57,11 @@ function MainController(User, $rootScope, algolia, $q, $state, lodash) {
     // do the search
     index.search(query, { hitsPerPage: 10 })
       .then(function(data) {
+      	console.log('data back from Algolia', data)
         // return the found items
         def.resolve(data.hits);
-      }, function(data) {
+      })
+      .catch(function(data) {
         // return no items
         def.resolve([]); 
         return [];
@@ -73,7 +75,7 @@ function MainController(User, $rootScope, algolia, $q, $state, lodash) {
    * Navigate to that product using ui-routers $state.go
    */
   function searchPicked($item, $model, $label) {
-  	$state.go('product', { id: $item.id, name: $item.name });
+  	$state.go('product', { id: $item.objectID, name: $item.name });
   }
 
 	/**

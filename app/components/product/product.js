@@ -24,14 +24,14 @@ function ProductController(Product, $stateParams) {
 	});
 
 	function openCheckout() {
-		console.log('in here clicked?????');
+		console.log('in here clicked?????', product.listing);
 
 		handler.open({
-			name: 'learnt.global',
-			description: '2 widgets',
+			name: product.listing.name,
+			description: product.listing.name,
 			zipCode: true,
 			currency: 'aud',
-			amount: 2000
+			amount: product.listing.price * 100
 		});
 	}
 
